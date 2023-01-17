@@ -15,7 +15,7 @@ namespace SmallBootCamp.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View(nameof(BootCamp));
         }
 
         public IActionResult Privacy()
