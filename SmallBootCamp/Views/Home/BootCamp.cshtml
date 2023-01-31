@@ -83,7 +83,7 @@
 
 
 <!-- Learn Section-->
-<section class="p-5 bg-dark text-light">
+<section class="p-5 bg-dark text-light" id="learn">
     <div class="container">
         <div class="row lead align-items-center justify-content-between">
             <div class="col-md">
@@ -136,7 +136,7 @@
 </section>
 
 <!-- Question Section-->
-<section class="p-5">
+<section class="p-5" id="question">
     <div class="container">
         <h2 class="text-center pb-3">
             Frequently Asked Questions
@@ -145,16 +145,16 @@
         <div class="accordion accordion-flush" id="questions">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                         Where exactly are you located?
                     </button>
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
                     <div class="accordion-body">
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada
-                            fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,
-                            tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
-                            Aenean ultricies mi vitae est. Mauris placerat eleifend leo
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada
+                        fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,
+                        tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+                        Aenean ultricies mi vitae est. Mauris placerat eleifend leo
                     </div>
                 </div>
             </div>
@@ -167,9 +167,9 @@
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#questions">
                     <div class="accordion-body">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Nihil voluptatum veritatis fuga aliquid, modi non reprehenderit 
-                         quisquam tenetur possimus, eum earum! Earum voluptatem id quibusdam dolores cumque, 
-                         atque delectus quis.
+                        Nihil voluptatum veritatis fuga aliquid, modi non reprehenderit
+                        quisquam tenetur possimus, eum earum! Earum voluptatem id quibusdam dolores cumque,
+                        atque delectus quis.
                     </div>
                 </div>
             </div>
@@ -179,12 +179,12 @@
                         What do i need to know?
                     </button>
                 </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#questions">
                     <div class="accordion-body">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         Laborum saepe molestiae a sapiente, placeat natus, aspernatur ratione tempora officia voluptates,
                         in quidem sequi distinctio suscipit facilis tenetur asperiores nobis rerum?
-                    
+
                     </div>
                 </div>
             </div>
@@ -194,7 +194,7 @@
                         How do i sign up?
                     </button>
                 </h2>
-                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#questions">
                     <div class="accordion-body">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Commodi, illum mollitia. Harum quis similique delectus ad! Consequuntur,
@@ -211,15 +211,15 @@
                         Do you help me find a job?
                     </button>
                 </h2>
-                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#questions">
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#questions">
                     <div class="accordion-body">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Sit delectus voluptatibus commodi, labore ullam perferendis 
-                        dolore aspernatur dolorum mollitia veritatis natus facere tenetur autem, 
-                        excepturi corrupti recusandae repudiandae possimus atque omnis ratione 
-                        voluptate molestiae ut! Aut minus voluptates nesciunt, vero eum magnam est, 
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Sit delectus voluptatibus commodi, labore ullam perferendis
+                        dolore aspernatur dolorum mollitia veritatis natus facere tenetur autem,
+                        excepturi corrupti recusandae repudiandae possimus atque omnis ratione
+                        voluptate molestiae ut! Aut minus voluptates nesciunt, vero eum magnam est,
                         necessitatibus animi quisquam sequi, facere odio. Officia, eos,
-                        illum vel modi aut facilis praesentium sint magni vero possimus in consequatur! 
+                        illum vel modi aut facilis praesentium sint magni vero possimus in consequatur!
                         Eligendi minima, debitis nulla nobis molestias eveniet perspiciatis consectetur.
                         Incidunt, quas quia?
                     </div>
@@ -228,3 +228,95 @@
         </div>
     </div>
 </section>
+
+
+<!-- Instructors Section-->
+<section id="instructors" class="p-5" style="background-color: var(--pur-color); color: white; ">
+    <div class="container">
+        <h2 class="text-center pb-3">
+            Our Instructors
+        </h2>
+        <p class="text-center pb-4">
+            Our instructors all have 5+ years working as a dotnet developer in the industry
+        </p>
+
+        <div class="row g-4">
+
+            <!-- Card 1-->
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                    <div class="card-body text-center text-dark">
+                        <img class="rounded-circle mb-3" src="https://randomuser.me/api/portraits/men/1.jpg" alt="man 1" asp-append-version="true" />
+                        <h3 class="card-title"> Jack Ryan</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Commodi, illum mollitia.
+                        </p>
+                        <a href="#"><i class="bi bi-twitch text-dark h4 mx-1"></i></a>
+                        <a href="#"><i class="bi bi-twitter text-dark h4 mx-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-dark h4 mx-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-dark h4 mx-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2-->
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                    <div class="card-body text-center text-dark">
+                        <img class="rounded-circle mb-3" src="https://randomuser.me/api/portraits/men/2.jpg" alt="man 2" asp-append-version="true" />
+                        <h3 class="card-title"> Logan Paul</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Commodi, illum mollitia.
+                        </p>
+                        <a href="#"><i class="bi bi-twitch text-dark h4 mx-1"></i></a>
+                        <a href="#"><i class="bi bi-twitter text-dark h4 mx-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-dark h4 mx-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-dark h4 mx-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3-->
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                    <div class="card-body text-center text-dark">
+                        <img class="rounded-circle mb-3" src="https://randomuser.me/api/portraits/women/54.jpg" alt="woman 1" asp-append-version="true" />
+                        <h3 class="card-title"> Layla Smith</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Commodi, illum mollitia.
+                        </p>
+                        <a href="#"><i class="bi bi-twitch text-dark h4 mx-1"></i></a>
+                        <a href="#"><i class="bi bi-twitter text-dark h4 mx-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-dark h4 mx-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-dark h4 mx-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4-->
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                    <div class="card-body text-center text-dark">
+                        <img class="rounded-circle mb-3" src="https://randomuser.me/api/portraits/women/50.jpg" alt="woman 2" asp-append-version="true" />
+                        <h3 class="card-title"> Zen Daya</h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Commodi, illum mollitia.
+                        </p>
+                        <a href="#"><i class="bi bi-twitch text-dark h4 mx-1"></i></a>
+                        <a href="#"><i class="bi bi-twitter text-dark h4 mx-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-dark h4 mx-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-dark h4 mx-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<button class="btn btn-bd-primary rounded-5">Hello C# Bro</button>
+
